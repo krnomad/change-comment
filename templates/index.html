@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Translate Comments</title>
+</head>
+<body>
+    <h1>Translate Rust Comments to Korean</h1>
+    <form action="/translate" method="post">
+        <label for="repo_url">GitHub Repository URL:</label>
+        <input type="text" id="repo_url" name="repo_url" required><br><br>
+
+        <label for="branch_name">New Branch Name:</label>
+        <input type="text" id="branch_name" name="branch_name" required><br><br>
+
+        <label for="base_branch">Base Branch (default: main):</label>
+        <input type="text" id="base_branch" name="base_branch"><br><br>
+
+        <label for="openai_api_key">OpenAI API Key:</label>
+        <input type="text" id="openai_api_key" name="openai_api_key" required><br><br>
+
+        <label for="github_token">GitHub Personal Access Token:</label>
+        <input type="text" id="github_token" name="github_token" required><br><br>
+
+        <input type="submit" value="Translate Comments">
+    </form>
+</body>
+</html>
