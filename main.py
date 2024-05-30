@@ -6,7 +6,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chat_models import ChatOpenAI
 from langchain.schema import HumanMessage
 
-# OpenAI API 키 설정
+# TODO: OpenAI API 키 설정
 openai.api_key = ''  # 실제 API 키로 변경
 
 def translate_comment(comment, llm_chain):
